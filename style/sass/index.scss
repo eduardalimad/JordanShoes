@@ -29,8 +29,7 @@
             color: rgb(0, 0, 0);
             font-family: 'Montserrat', sans-serif;
         }
-    }
-    
+    }    
     .img-background{
         width: 100%;
         max-height: 30rem;
@@ -40,12 +39,13 @@
         align-items: center;
         position: relative;
         
+        
         .background{
         width: 100%;
         max-height: 30rem;
         -webkit-mask-image: linear-gradient(to top, #00000075 5%, #000000d4 100%);    
         position:unset;
-        
+        object-fit: fill;  
         }
 
         .title-jordan{
@@ -59,26 +59,24 @@
         }
     }
     .main-title{
-        margin: 5rem 2rem 2rem 2rem;
-
-        
+        margin: 5rem 2rem 2rem 1rem;
             .text{
                 display: grid;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 2rem;
             }
     }
-
     main{
         width: 100%;
         .produtos{
-            margin: 2.5rem 5rem 5rem 5rem;
+            margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1.2rem;
             flex-wrap: wrap;
-            width: 85%;
+            width: 80%;
             
 
             .box-imagem{
@@ -92,8 +90,15 @@
                 
                 img{
                     width: 12rem;
+                    transition: transform 1s;
+                    transform: translateX(0) scale(1);
                 }
+
+                img:hover{
+                transform: translateX(5px) scale(1.2);
+                
             }
+        }
         }
     }
     footer{
@@ -106,3 +111,53 @@
 
     }
     
+    @media (max-width: 515px){
+    .nav-one{
+        font-size: small;
+    }
+    .img-background{
+        font-size: small;
+        height: 15rem;
+        width: 100%;
+        .background{
+        height: 15rem; 
+        object-fit:cover;
+        }
+    }
+    .title-jordan{
+        
+        height: auto!important;
+        font-size: .8rem;
+        
+    }
+    .main-title{
+        margin: 2rem;
+    .title-destaque{
+        
+        margin: 2rem;
+
+        p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        }
+    }
+    .produtos{
+    margin: auto !important;
+    }
+}
+}
+    @media (min-width: 1440px){
+        .title-jordan{
+            font-size: 1.4rem;
+        }
+        .title-destaque{
+            font-size: 1.4rem;
+        }
+        .produtos{
+            width: 60%!important;
+            gap: 2rem !important;
+
+        }
+    }
