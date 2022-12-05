@@ -30,17 +30,32 @@
             font-family: 'Montserrat', sans-serif;
         }
     }
+    
     .img-background{
         width: 100%;
         max-height: 30rem;
-        background-image: linear-gradient(to right bottom, rgb(0 0 0), rgb(0 0 0 / 82%));
+        background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.82));
+        display: flex;
         justify-content: center;
+        align-items: center;
+        position: relative;
         
         .background{
         width: 100%;
-        -webkit-mask-image: linear-gradient(to top, #00000075 5%, #000000d4 100%);
-            
-            
+        max-height: 30rem;
+        -webkit-mask-image: linear-gradient(to top, #00000075 5%, #000000d4 100%);    
+        position:unset;
+        
+        }
+
+        .title-jordan{
+            padding: 6rem 6rem 6rem 2.5rem ;
+            width: 100%;
+            z-index: 5 ;
+            height: 15rem;
+            color: #ffffff;
+            position: absolute;
+            margin: auto;
         }
     }
     .main-title{

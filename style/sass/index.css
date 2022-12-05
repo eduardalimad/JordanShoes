@@ -36,11 +36,25 @@
   width: 100%;
   max-height: 30rem;
   background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.82));
+  display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .img-background .background {
   width: 100%;
+  max-height: 30rem;
   -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.4588235294) 5%, rgba(0, 0, 0, 0.831372549) 100%);
+  position: unset;
+}
+.img-background .title-jordan {
+  padding: 6rem 6rem 6rem 2.5rem;
+  width: 100%;
+  z-index: 5;
+  height: 15rem;
+  color: #ffffff;
+  position: absolute;
+  margin: auto;
 }
 
 .main-title {
